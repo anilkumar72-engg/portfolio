@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anil Kumar | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-blue-100 via-pink-100 to-yellow-100 text-gray-800 transition duration-500">
+
+  <!-- Navbar -->
+  <nav class="bg-gradient-to-r from-pink-500 to-orange-400 shadow-lg fixed w-full z-50" id="navbar">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold text-white">Anil Kumar</h1>
+
+      <!-- Desktop Menu -->
+      <div id="desktopMenu" class="space-x-4 text-white">
+        <a href="#home" class="hover:underline">Home</a>
+        <a href="#skills" class="hover:underline">Skills</a>
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#education" class="hover:underline">Education</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div id="mobileMenu">
+        <button onclick="toggleMobileMenu()" class="px-3 py-1 border rounded text-white hover:bg-white hover:text-black transition">☰</button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobileDropdown" class="bg-white hidden flex-col items-center p-4 space-y-2 border-t">
+      <a href="#home" onclick="toggleMobileMenu()">Home</a>
+      <a href="#skills" onclick="toggleMobileMenu()">Skills</a>
+      <a href="#projects" onclick="toggleMobileMenu()">Projects</a>
+      <a href="#education" onclick="toggleMobileMenu()">Education</a>
+      <a href="#contact" onclick="toggleMobileMenu()">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-4" data-aos="zoom-in">
+    <h1 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-gradient">
+      Veera Venkata Anil Kumar Budda
+    </h1>
+    <p class="mt-4 text-lg text-gray-700">Data Analyst | Flutter Developer | Python Enthusiast</p>
+    <a href="https://drive.google.com/file/d/1QR7YrxGMzqK5qnHn5sKPpCbB5aV7PX66/view?usp=sharing" 
+       target="_blank" 
+       class="mt-6 px-8 py-3 bg-gradient-to-r from-pink-500 to-orange-400 text-white font-semibold rounded-full shadow-lg hover:scale-105 hover:shadow-2xl transition">
+       📄 Download Resume
+    </a>
+  </section>
+
+  <!-- Summary -->
+  <section class="py-16 container mx-auto px-6" data-aos="fade-up">
+    <h2 class="section-title">Professional Summary</h2>
+    <p class="max-w-3xl mx-auto text-center text-lg leading-relaxed">
+      Detail-oriented and quick-learning Data Analyst with practical experience in data collection, cleaning,
+      validation, and visualization. Proficient in SQL, MS Excel, Power BI, and Python for data workflows.
+      Strong attention to detail, effective prioritization under deadlines, and collaborative problem solving.
+      Seeking an entry-level Data Analyst role to contribute to high-quality data and analytics.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-16 bg-gradient-to-r from-blue-50 to-pink-50" data-aos="fade-up">
+    <h2 class="section-title">Skills</h2>
+    <div class="container mx-auto grid md:grid-cols-3 gap-8 px-6">
+      <div class="skill-card" data-aos="zoom-in">
+        <h3>Technical</h3>
+        <p>SQL, MS Excel, Power BI, Python, Git, VS Code, MongoDB, Flutter</p>
+      </div>
+      <div class="skill-card" data-aos="zoom-in">
+        <h3>Data</h3>
+        <p>Data Collection, Data Cleaning, Data Validation, Reporting, Visualization, ETL</p>
+      </div>
+      <div class="skill-card" data-aos="zoom-in">
+        <h3>Soft Skills</h3>
+        <p>Attention to Detail, Communication, Teamwork, Time Management</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-16 container mx-auto px-6" data-aos="fade-up">
+    <h2 class="section-title">Projects</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="project-card" data-aos="fade-up">
+        <h3>Sales Data Analysis</h3>
+        <p>Cleaned and validated datasets, performed EDA, and built Power BI dashboards.</p>
+      </div>
+      <div class="project-card" data-aos="fade-up">
+        <h3>Student Database System</h3>
+        <p>Designed schema, implemented CRUD operations, and wrote complex SQL queries.</p>
+      </div>
+      <div class="project-card" data-aos="fade-up">
+        <h3>Smart Health Monitoring System</h3>
+        <p>Designed simulated system architecture with data ingestion and alert triggers.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="py-16 bg-gradient-to-r from-yellow-50 to-orange-50" data-aos="fade-up">
+    <h2 class="section-title">Education</h2>
+    <div class="max-w-2xl mx-auto space-y-6 px-6">
+      <div class="edu-card">
+        <h3>B.Tech in Information Technology</h3>
+        <p>SASI Institute of Technology and Engineering (2022–2025) | CGPA: 7.2</p>
+      </div>
+      <div class="edu-card">
+        <h3>Diploma in Mechanical Engineering</h3>
+        <p>Swarnandhra College (2018–2020) | 71%</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 container mx-auto text-center" data-aos="zoom-in">
+    <h2 class="section-title">Contact</h2>
+    <p>Email: 
+      <a href="mailto:anilkumar.budda44@gmail.com" class="text-blue-600 hover:underline">
+        anilkumar.budda44@gmail.com
+      </a>
+    </p>
+    <p>LinkedIn: 
+      <a href="https://www.linkedin.com/in/anilkumar-budda-5a240128b" target="_blank" class="text-blue-600 hover:underline">
+        linkedin.com/in/anilkumar-budda-5a240128b
+      </a>
+    </p>
+    <p>GitHub: 
+      <a href="https://github.com/anilkumar72-engg" target="_blank" class="text-blue-600 hover:underline">
+        github.com/anilkumar72-engg
+      </a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-pink-500 to-orange-400 text-white py-6 text-center">
+    &copy; 2025 Anil Kumar. All rights reserved.
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
